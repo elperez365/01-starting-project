@@ -7,9 +7,8 @@ function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-const description = reactDescription[genRandomInt(2)];
-
 function Header() {
+  const description = reactDescription[genRandomInt(2)];
   return (
     <header>
       <img src={reactImage} alt="Stylized atom" />
